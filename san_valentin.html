@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carta para Luyuromo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient-glow" aria-hidden="true"></div>
+
+    <main class="stage">
+      <section class="letter" aria-label="Carta con mensajes de motivación y aprecio">
+        <p class="letter-tag">Carta de San Valentín</p>
+        <h1 class="title">Luyuromo</h1>
+        <p class="intro">
+          Estar contigo me inspira: cambia sus palabras para recordarte lo valiosa que eres.
+        </p>
+
+        <article class="message-box" id="messageBox" aria-live="polite">
+          <h2>Mensaje de hoy</h2>
+          <p id="quoteText"></p>
+        </article>
+
+        <div class="controls">
+          <button id="newMessageBtn" type="button">Nuevo mensaje ✨</button>
+          <button id="bloomBtn" type="button">Revivir rosas 🌹</button>
+        </div>
+      </section>
+
+      <section class="bouquet-scene" aria-label="Ramo de rosas en estilo detallado">
+        <div class="paper-backdrop"></div>
+
+        <div class="bouquet" id="bouquet">
+          <div class="rose rose-main r1"></div>
+          <div class="rose rose-main r2"></div>
+          <div class="rose rose-main r3"></div>
+          <div class="rose rose-mid r4"></div>
+          <div class="rose rose-mid r5"></div>
+          <div class="rose rose-bud r6"></div>
+
+          <div class="stem s1"></div>
+          <div class="stem s2"></div>
+          <div class="stem s3"></div>
+
+          <div class="leaf l1"></div>
+          <div class="leaf l2"></div>
+          <div class="leaf l3"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
