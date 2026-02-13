@@ -23,14 +23,12 @@
        Si no quieres mover el código, abre tu carta-luyuromo.jsx, copia el componente principal 
        y pégalo entre las etiquetas <script type="text/babel"> ... </script> -->
   <script type="text/babel">
-    import React, { useState } from 'react';
-
-export default function CartaLuyuromo() {
-  const [noCount, setNoCount] = useState(0);
-  const [yesPressed, setYesPressed] = useState(false);
-  const [noPosition, setNoPosition] = useState({ x: 0, y: 0 });
-  const [currentMessage, setCurrentMessage] = useState('');
-  const [showRoses, setShowRoses] = useState(false);
+export function CartaLuyuromo() {
+  const [noCount, setNoCount] = react.useState(0);
+  const [yesPressed, setYesPressed] = react.useState(false);
+  const [noPosition, setNoPosition] = react.useState({ x: 0, y: 0 });
+  const [currentMessage, setCurrentMessage] = react.useState('');
+  const [showRoses, setShowRoses] = react.useState(false);
 
   const messages = [
     "¿No estás segura?",
@@ -449,7 +447,7 @@ export default function CartaLuyuromo() {
       );
     }
 
-    ReactDOM.createRoot(document.getElementById('root')).render(<Carta />);
+   ReactDOM.createRoot(document.getElementById("root")).render(<CartaLuyuromo />);
   </script>
 </body>
 </html>
